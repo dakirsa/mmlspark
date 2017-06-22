@@ -278,6 +278,7 @@ class ImageTransformer(val uid: String) extends Transformer
     addStage(Map(stageName -> ColorFormat.stageName, ColorFormat.format -> format))
   }
 
+  @AddWrapper
   def blur(height: Double, width: Double): this.type = {
     addStage(Map(stageName -> Blur.stageName, Blur.height -> height, Blur.width -> width))
   }

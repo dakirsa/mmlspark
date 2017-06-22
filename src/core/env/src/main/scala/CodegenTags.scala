@@ -10,3 +10,8 @@ import scala.annotation.StaticAnnotation
   * and the rest is added in the inherited wrapper.
   */
 class InternalWrapper extends StaticAnnotation
+
+
+/** Expose the given function in generated Python wrapper.
+  */
+class AddWrapper extends StaticAnnotation
